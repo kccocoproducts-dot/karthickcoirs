@@ -1,47 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="description" content="Karthick Coirs is a leading cocopeat manufacturer and exporter in India. We supply Low EC cocopeat, High EC cocopeat, grow bags, poultry coco pith and nursery cocopeat from Palani Tamil Nadu.">
-<meta name="keywords" content="Cocopeat Manufacturer, Cocopeat Exporter India, Low EC Cocopeat, High EC Cocopeat, Grow Bags, Poultry Coco Pith, Nursery Cocopeat, Coir Pith">
+<meta charset="UTF-8">
 <title>Karthick Coirs – Cocopeat Exporter</title>
+
+<meta name="description" content="Karthick Coirs is a leading cocopeat manufacturer and exporter in India. We supply Low EC cocopeat, High EC cocopeat, grow bags, poultry coco pith and nursery cocopeat from Palani Tamil Nadu.">
+<meta name="keywords" content="Cocopeat Manufacturer, Cocopeat Exporter India, Low EC Cocopeat, High EC Cocopeat, Grow Bags, Poultry Coco Pith, Nursery Cocopeat, Coir Pith">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <style>
-body{margin:0;font-family:Georgia,serif;background:#fff;color:#222}
-header{background:#1b5e20;color:white;text-align:center;padding:30px}
-header img{height:70px;margin-bottom:10px}
-section{max-width:1100px;margin:auto;padding:40px}
-h2{color:#1b5e20;border-bottom:3px solid #1b5e20}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{border:1px solid #ddd}
-.card img{width:100%;height:220px;object-fit:cover}
-.card div{padding:15px}
-.card a{display:block;background:#1b5e20;color:white;text-align:center;padding:12px;text-decoration:none}
-footer{background:#1b5e20;color:white;text-align:center;padding:20px}
+body{
+  margin:0;
+  font-family:Georgia,serif;
+  background:linear-gradient(rgba(255,255,255,.85),rgba(255,255,255,.85)),
+  url('Lowec.jpeg');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('Lowec.jpeg');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
+header img{
+  width:120px;
+  background:white;
+  padding:10px;
+  border-radius:50%;
+  margin-bottom:20px;
+}
+
+/* SECTIONS */
+section{
+  max-width:1100px;
+  margin:40px auto;
+  padding:40px;
+  background:rgba(255,255,255,.95);
+  border-radius:10px;
+  box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+h2{
+  color:#1b5e20;
+  border-bottom:3px solid #1b5e20;
+  padding-bottom:10px;
+}
+
+/* PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+.card{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.card div{
+  padding:20px;
+}
+.card a{
+  display:block;
+  background:#1b5e20;
+  color:white;
+  text-align:center;
+  padding:12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.card a:hover{background:#145214}
+
+/* FORM */
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+button{
+  background:#1b5e20;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:5px;
+  font-size:16px;
+}
+
+/* FOOTER */
+footer{
+  background:#1b5e20;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
 </style>
 </head>
 
 <body>
-<header style="
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('Lowec.jpeg');
-background-size:cover;
-background-position:center;
-color:white;
-padding:70px 20px;
-text-align:center;">
 
-<img src="Kclogo.jpeg" style="width:120px;background:white;padding:10px;border-radius:50%;margin-bottom:20px;">
-
-<h1 style="font-size:42px;letter-spacing:2px;">KARTHICK COIRS</h1>
-
-<p style="font-size:20px;margin-top:10px;">
-Premium Cocopeat & Coir Products
-</p>
-
-<p style="font-size:16px;color:#a5f5b3;">
-Manufacturer & Exporter • Palani, Tamil Nadu
-</p>
-
+<header>
+<img src="Kclogo.jpeg">
+<h1 style="font-size:42px;">KARTHICK COIRS</h1>
+<p style="font-size:20px;">Premium Cocopeat & Coir Products</p>
+<p style="color:#a5f5b3;">Manufacturer & Exporter • Palani, Tamil Nadu</p>
 </header>
 
 <section>
@@ -50,84 +126,68 @@ Manufacturer & Exporter • Palani, Tamil Nadu
 
 <div class="card">
 <img src="Lowec.jpeg">
-<div>
-<h3>Low EC Cocopeat</h3>
-<p>Washed and buffered cocopeat for greenhouse and export quality crops.</p>
-</div>
+<div><h3>Low EC Cocopeat</h3><p>Washed & buffered cocopeat for export quality farming.</p></div>
 <a href="low-ec-cocopeat.html">View Details</a>
 </div>
 
 <div class="card">
 <img src="Highec.jpeg">
-<div>
-<h3>High EC Cocopeat</h3>
-<p>Natural cocopeat used for soil conditioning and farming.</p>
-</div>
+<div><h3>High EC Cocopeat</h3><p>Natural cocopeat for soil conditioning & landscaping.</p></div>
 <a href="high-ec-cocopeat.html">View Details</a>
 </div>
 
 <div class="card">
 <img src="Growbag.jpeg">
-<div>
-<h3>Grow Bags</h3>
-<p>Premium cocopeat grow bags for vegetable and flower cultivation.</p>
-</div>
+<div><h3>Grow Bags</h3><p>Ready-to-use cocopeat grow bags for vegetables & flowers.</p></div>
 <a href="grow-bags.html">View Details</a>
 </div>
 
 <div class="card">
 <img src="Polutary.jpeg">
-<div>
-<h3>Poultry Coco Pith</h3>
-<p>Highly absorbent poultry bedding material.</p>
-</div>
+<div><h3>Poultry Coco Pith</h3><p>Highly absorbent bedding for poultry farms.</p></div>
 <a href="poultry-coco-pith.html">View Details</a>
 </div>
 
 <div class="card">
 <img src="Nursery.jpeg">
-<div>
-<h3>Nursery Cocopeat</h3>
-<p>Fine cocopeat for seedlings and nurseries.</p>
-</div>
+<div><h3>Nursery Cocopeat</h3><p>Fine cocopeat for seedlings & nurseries.</p></div>
 <a href="nursery-cocopeat.html">View Details</a>
 </div>
 
 </div>
 </section>
 
-<footer>
-📞 9363940486 | ✉ kccoproducts@gmail.com <br>
-© 2026 Karthick Coirs – Palani, Tamil Nadu
-<section style="max-width:1000px;margin:auto;padding:40px;background:#f4f8f5;">
-<h2 style="color:#1b5e20;border-bottom:3px solid #1b5e20;">Product Enquiry</h2>
-
-<form action="https://formsubmit.co/kccoproducts@gmail.com" method="POST" style="background:white;padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.1);">
-<input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:10px 0;">
-<input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:10px;margin:10px 0;">
-<input type="text" name="product" placeholder="Product Interested (Low EC, Grow Bag etc)" required style="width:100%;padding:10px;margin:10px 0;">
-<textarea name="message" placeholder="Your Requirement" required style="width:100%;padding:10px;margin:10px 0;height:120px;"></textarea>
-<button type="submit" style="background:#1b5e20;color:white;padding:12px 25px;border:none;">Send Enquiry</button>
+<section>
+<h2>Product Enquiry</h2>
+<form action="https://formsubmit.co/kccoproducts@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="text" name="product" placeholder="Product Interested" required>
+<textarea name="message" placeholder="Your Requirement" required></textarea>
+<button type="submit">Send Enquiry</button>
 </form>
+</section>
 
-<h2 style="color:#1b5e20;margin-top:50px;border-bottom:3px solid #1b5e20;">Export Packing & Container Loading</h2>
-<p>
-Karthick Coirs supplies cocopeat in 5 kg compressed blocks and loose form packed in strong poly wrapping.
-Products are palletized and shrink-wrapped for safe container loading.
-</p>
+<section>
+<h2>Export Packing & Container Loading</h2>
+<p>Karthick Coirs supplies cocopeat in 5 kg compressed blocks and loose form with moisture-proof export packing.</p>
 <ul>
 <li>20 FT container – up to 18 MT</li>
 <li>40 FT container – up to 26 MT</li>
-<li>Moisture-proof export packing</li>
-<li>Custom buyer labeling available</li>
+<li>Palletized & shrink wrapped</li>
+<li>Custom buyer branding</li>
 </ul>
-
-<h2 style="color:#1b5e20;margin-top:50px;border-bottom:3px solid #1b5e20;">Why Buy from Karthick Coirs?</h2>
-<p>
-Karthick Coirs is a trusted cocopeat manufacturer from Palani, Tamil Nadu supplying to India and export markets.
-We offer consistent quality, bulk supply, competitive pricing and reliable delivery.
-</p>
 </section>
+
+<section>
+<h2>Why Buy from Karthick Coirs?</h2>
+<p>We are a trusted cocopeat manufacturer from Palani supplying India & export markets with consistent quality, bulk capacity and competitive pricing.</p>
+</section>
+
+<footer>
+📞 9363940486 | ✉ kccoproducts@gmail.com  
+<br>© 2026 Karthick Coirs – Palani, Tamil Nadu
 </footer>
+
 </body>
 </html>
