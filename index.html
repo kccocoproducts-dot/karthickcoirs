@@ -128,6 +128,19 @@ padding:30px;
 
 <header>
 <img src="Kclogo.jpeg">
+  <div id="menuBtn" style="position:absolute;top:20px;right:20px;font-size:30px;cursor:pointer;color:#1b5e20;">
+☰
+</div>
+
+<div id="menu" style="display:none;position:fixed;top:0;right:0;width:250px;height:100%;background:#1b5e20;padding:30px;z-index:1000;">
+<a href="index.html" style="color:white;display:block;margin:20px 0;text-decoration:none;">Home</a>
+<a href="low-ec-cocopeat.html" style="color:white;display:block;margin:20px 0;text-decoration:none;">Low EC Cocopeat</a>
+<a href="high-ec-cocopeat.html" style="color:white;display:block;margin:20px 0;text-decoration:none;">High EC Cocopeat</a>
+<a href="grow-bags.html" style="color:white;display:block;margin:20px 0;text-decoration:none;">Grow Bags</a>
+<a href="poultry-coco-pith.html" style="color:white;display:block;margin:20px 0;text-decoration:none;">Poultry Coco Pith</a>
+<a href="nursery-cocopeat.html" style="color:white;display:block;margin:20px 0;text-decoration:none;">Nursery Cocopeat</a>
+<a href="#" onclick="closeMenu()" style="color:white;display:block;margin:40px 0;text-decoration:none;">Close ✖</a>
+</div>
 <h1>KARTHICK COIRS</h1>
 <p>Premium Cocopeat & Coir Products Manufacturer</p>
 <p>Palani, Tamil Nadu – India</p>
@@ -246,5 +259,13 @@ z-index:999;
 ">
 💬 WhatsApp
 </a>
+  <script>
+document.getElementById("menuBtn").onclick = function(){
+  document.getElementById("menu").style.display = "block";
+}
+function closeMenu(){
+  document.getElementById("menu").style.display = "none";
+}
+</script>
 </body>
 </html>
