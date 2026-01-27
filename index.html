@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <title>Karthick Coirs – Cocopeat Exporter</title>
 
-<meta name="description" content="Karthick Coirs is a leading cocopeat manufacturer and exporter in India supplying Low EC Cocopeat, High EC Cocopeat, Grow Bags, Poultry Coco Pith and Nursery Cocopeat.">
-<meta name="keywords" content="Low EC Cocopeat Exporter, Cocopeat Manufacturer India, Cocopeat Supplier Tamil Nadu, Grow Bags, Poultry Coco Pith">
+<meta name="description" content="Karthick Coirs is a leading cocopeat manufacturer and exporter in India. We supply Low EC cocopeat, High EC cocopeat, grow bags, poultry coco pith and nursery cocopeat from Palani Tamil Nadu.">
+<meta name="keywords" content="Low EC Cocopeat Exporter India, Cocopeat Manufacturer Tamil Nadu, Cocopeat Supplier Palani, Grow Bags, Poultry Coco Pith, Nursery Cocopeat">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -18,8 +18,7 @@ url('coconut-bg.jpeg');
 background-size:cover;
 background-attachment:fixed;
 }
-
-.fade{animation:fadeIn 1.5s ease}
+.fade{animation:fadeIn 1.2s ease}
 @keyframes fadeIn{
 from{opacity:0;transform:translateY(30px)}
 to{opacity:1;transform:translateY(0)}
@@ -29,12 +28,27 @@ to{opacity:1;transform:translateY(0)}
 
 <body class="font-serif">
 
+<!-- Hamburger Menu -->
+<div class="fixed top-5 right-5 z-50">
+<button id="menuBtn" class="text-3xl bg-white px-4 py-2 rounded shadow">☰</button>
+</div>
+
+<div id="menu" class="hidden fixed top-0 right-0 w-64 h-full bg-green-800 text-white p-8 z-40">
+<a href="index.html" class="block py-3">Home</a>
+<a href="low-ec-cocopeat.html" class="block py-3">Low EC Cocopeat</a>
+<a href="high-ec-cocopeat.html" class="block py-3">High EC Cocopeat</a>
+<a href="grow-bags.html" class="block py-3">Grow Bags</a>
+<a href="poultry-coco-pith.html" class="block py-3">Poultry Coco Pith</a>
+<a href="nursery-cocopeat.html" class="block py-3">Nursery Cocopeat</a>
+<a href="#" onclick="closeMenu()" class="block py-6">Close ✖</a>
+</div>
+
 <!-- Header -->
 <div class="text-center py-20 fade">
 <img src="Kclogo.jpeg" class="w-28 mx-auto bg-white p-2 rounded-full shadow-lg">
 <h1 class="text-5xl font-bold text-green-800 mt-5">KARTHICK COIRS</h1>
 <p class="text-xl mt-2">Premium Cocopeat & Coir Products Exporter</p>
-<p class="text-green-700 mt-1">Palani, Tamil Nadu, India</p>
+<p class="text-green-700">Palani, Tamil Nadu, India</p>
 <p class="font-bold mt-2">GSTIN: 33CJRPV0480M1ZI</p>
 </div>
 
@@ -46,27 +60,47 @@ to{opacity:1;transform:translateY(0)}
 
 <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
 <img src="Lowec.jpeg" class="w-full h-52 object-cover">
-<div class="p-6"><h3 class="font-bold text-xl">Low EC Cocopeat</h3><p>Washed & buffered export grade cocopeat.</p></div>
+<div class="p-6">
+<h3 class="font-bold text-xl">Low EC Cocopeat</h3>
+<p>Washed & buffered export grade cocopeat.</p>
+<a href="low-ec-cocopeat.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
+</div>
 </div>
 
 <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
 <img src="Highec.jpeg" class="w-full h-52 object-cover">
-<div class="p-6"><h3 class="font-bold text-xl">High EC Cocopeat</h3><p>Natural cocopeat for soil conditioning.</p></div>
+<div class="p-6">
+<h3 class="font-bold text-xl">High EC Cocopeat</h3>
+<p>Natural cocopeat for soil conditioning.</p>
+<a href="high-ec-cocopeat.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
+</div>
 </div>
 
 <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
 <img src="Growbag.jpeg" class="w-full h-52 object-cover">
-<div class="p-6"><h3 class="font-bold text-xl">Grow Bags</h3><p>Ready to use cocopeat grow bags.</p></div>
+<div class="p-6">
+<h3 class="font-bold text-xl">Grow Bags</h3>
+<p>Ready to use cocopeat grow bags.</p>
+<a href="grow-bags.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
+</div>
 </div>
 
 <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
 <img src="Polutary.jpeg" class="w-full h-52 object-cover">
-<div class="p-6"><h3 class="font-bold text-xl">Poultry Coco Pith</h3><p>High absorbent poultry bedding.</p></div>
+<div class="p-6">
+<h3 class="font-bold text-xl">Poultry Coco Pith</h3>
+<p>High absorbent poultry bedding.</p>
+<a href="poultry-coco-pith.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
+</div>
 </div>
 
 <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
 <img src="Nursery.jpeg" class="w-full h-52 object-cover">
-<div class="p-6"><h3 class="font-bold text-xl">Nursery Cocopeat</h3><p>Fine cocopeat for seedlings.</p></div>
+<div class="p-6">
+<h3 class="font-bold text-xl">Nursery Cocopeat</h3>
+<p>Fine cocopeat for seedlings.</p>
+<a href="nursery-cocopeat.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
+</div>
 </div>
 
 </div>
@@ -76,7 +110,7 @@ to{opacity:1;transform:translateY(0)}
 <div class="max-w-5xl mx-auto bg-white p-10 rounded-xl shadow-xl my-20 fade">
 <h2 class="text-3xl text-green-800 font-bold">Meet Our CEO</h2>
 <p class="mt-4"><b>Karthick Venkidusamy</b> – Founder & CEO</p>
-<p>5+ years of experience in cocopeat manufacturing & export, delivering quality to global markets.</p>
+<p>5+ years of experience in cocopeat manufacturing and export, delivering quality to global markets.</p>
 </div>
 
 <!-- Enquiry -->
@@ -101,6 +135,15 @@ to{opacity:1;transform:translateY(0)}
 
 <!-- WhatsApp -->
 <a href="https://wa.me/919363940486" class="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-full shadow-xl">💬 WhatsApp</a>
+
+<script>
+document.getElementById("menuBtn").onclick=function(){
+document.getElementById("menu").classList.remove("hidden");
+}
+function closeMenu(){
+document.getElementById("menu").classList.add("hidden");
+}
+</script>
 
 </body>
 </html>
