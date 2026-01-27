@@ -4,130 +4,103 @@
 <meta charset="UTF-8">
 <title>Karthick Coirs – Cocopeat Exporter</title>
 
-<meta name="description" content="Karthick Coirs is a leading cocopeat manufacturer and exporter in India. We supply Low EC cocopeat, High EC cocopeat, grow bags, poultry coco pith and nursery cocopeat from Palani Tamil Nadu.">
-<meta name="keywords" content="Low EC Cocopeat Exporter India, Cocopeat Manufacturer Tamil Nadu, Cocopeat Supplier Palani, Coir Pith Exporter, Grow Bags Manufacturer">
-<meta name="author" content="Karthick Coirs">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karthick Coirs is a leading cocopeat manufacturer and exporter in India supplying Low EC Cocopeat, High EC Cocopeat, Grow Bags, Poultry Coco Pith and Nursery Cocopeat.">
+<meta name="keywords" content="Low EC Cocopeat Exporter, Cocopeat Manufacturer India, Cocopeat Supplier Tamil Nadu, Grow Bags, Poultry Coco Pith">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdn.tailwindcss.com"></script>
 
 <style>
 body{
-margin:0;
-font-family:Georgia,serif;
 background:
-linear-gradient(rgba(255,255,255,0.90),rgba(255,255,255,0.90)),
+linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
 url('coconut-bg.jpeg');
 background-size:cover;
 background-attachment:fixed;
-background-position:center;
-color:#222;
 }
 
-header{
-text-align:center;
-padding:70px 20px;
+.fade{animation:fadeIn 1.5s ease}
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px)}
+to{opacity:1;transform:translateY(0)}
 }
-
-header img{
-width:120px;
-background:white;
-border-radius:50%;
-padding:10px;
-}
-
-h1{color:#1b5e20;font-size:42px;margin:20px 0}
-h2{color:#1b5e20;border-bottom:3px solid #1b5e20;padding-bottom:10px}
-
-section{max-width:1200px;margin:auto;padding:50px 30px}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px
-}
-
-.card{
-border:1px solid #ddd;
-border-radius:10px;
-overflow:hidden;
-background:white;
-box-shadow:0 10px 25px rgba(0,0,0,.1)
-}
-
-.card img{width:100%;height:220px;object-fit:cover}
-.card div{padding:20px}
-.card a{display:block;background:#1b5e20;color:white;text-align:center;padding:14px;text-decoration:none}
-
-.white-box{
-background:white;
-padding:40px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-margin:40px 0
-}
-
-table{width:100%;border-collapse:collapse;margin-top:20px}
-th,td{border:1px solid #ccc;padding:10px;text-align:left}
-
-input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:6px;border:1px solid #ccc}
-button{background:#1b5e20;color:white;padding:14px 30px;border:none;font-size:16px}
-
-footer{background:#1b5e20;color:white;text-align:center;padding:30px}
 </style>
 </head>
 
-<body>
+<body class="font-serif">
 
-<header>
-<img src="Kclogo.jpeg">
-<h1>KARTHICK COIRS</h1>
-<p>Premium Cocopeat & Coir Products Manufacturer</p>
-<p>Palani, Tamil Nadu, India</p>
-<p><strong>GSTIN:</strong> 33CJRPV0480M1ZI</p>
-</header>
+<!-- Header -->
+<div class="text-center py-20 fade">
+<img src="Kclogo.jpeg" class="w-28 mx-auto bg-white p-2 rounded-full shadow-lg">
+<h1 class="text-5xl font-bold text-green-800 mt-5">KARTHICK COIRS</h1>
+<p class="text-xl mt-2">Premium Cocopeat & Coir Products Exporter</p>
+<p class="text-green-700 mt-1">Palani, Tamil Nadu, India</p>
+<p class="font-bold mt-2">GSTIN: 33CJRPV0480M1ZI</p>
+</div>
 
-<section>
-<h2>Our Products</h2>
-<div class="products">
+<!-- Products -->
+<div class="max-w-7xl mx-auto px-10 fade">
+<h2 class="text-3xl text-green-800 font-bold border-b-4 border-green-800 inline-block">Our Products</h2>
 
-<div class="card"><img src="Lowec.jpeg"><div><h3>Low EC Cocopeat</h3><p>Washed & buffered export grade cocopeat.</p></div><a href="low-ec-cocopeat.html">View</a></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
 
-<div class="card"><img src="Highec.jpeg"><div><h3>High EC Cocopeat</h3><p>Natural cocopeat for soil conditioning.</p></div><a href="high-ec-cocopeat.html">View</a></div>
+<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
+<img src="Lowec.jpeg" class="w-full h-52 object-cover">
+<div class="p-6"><h3 class="font-bold text-xl">Low EC Cocopeat</h3><p>Washed & buffered export grade cocopeat.</p></div>
+</div>
 
-<div class="card"><img src="Growbag.jpeg"><div><h3>Grow Bags</h3><p>Ready to use cocopeat grow bags.</p></div><a href="grow-bags.html">View</a></div>
+<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
+<img src="Highec.jpeg" class="w-full h-52 object-cover">
+<div class="p-6"><h3 class="font-bold text-xl">High EC Cocopeat</h3><p>Natural cocopeat for soil conditioning.</p></div>
+</div>
 
-<div class="card"><img src="Polutary.jpeg"><div><h3>Poultry Coco Pith</h3><p>High absorbent poultry bedding.</p></div><a href="poultry-coco-pith.html">View</a></div>
+<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
+<img src="Growbag.jpeg" class="w-full h-52 object-cover">
+<div class="p-6"><h3 class="font-bold text-xl">Grow Bags</h3><p>Ready to use cocopeat grow bags.</p></div>
+</div>
 
-<div class="card"><img src="Nursery.jpeg"><div><h3>Nursery Cocopeat</h3><p>Fine cocopeat for seedlings.</p></div><a href="nursery-cocopeat.html">View</a></div>
+<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
+<img src="Polutary.jpeg" class="w-full h-52 object-cover">
+<div class="p-6"><h3 class="font-bold text-xl">Poultry Coco Pith</h3><p>High absorbent poultry bedding.</p></div>
+</div>
+
+<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
+<img src="Nursery.jpeg" class="w-full h-52 object-cover">
+<div class="p-6"><h3 class="font-bold text-xl">Nursery Cocopeat</h3><p>Fine cocopeat for seedlings.</p></div>
+</div>
 
 </div>
-</section>
+</div>
 
-<section class="white-box">
-<h2>Meet Our CEO</h2>
-<p><strong>Karthick Venkidusamy</strong> – Founder & CEO</p>
-<p>With 5+ years of experience in cocopeat manufacturing and export, Karthick Coirs delivers premium quality products with reliable global supply.</p>
-</section>
+<!-- CEO -->
+<div class="max-w-5xl mx-auto bg-white p-10 rounded-xl shadow-xl my-20 fade">
+<h2 class="text-3xl text-green-800 font-bold">Meet Our CEO</h2>
+<p class="mt-4"><b>Karthick Venkidusamy</b> – Founder & CEO</p>
+<p>5+ years of experience in cocopeat manufacturing & export, delivering quality to global markets.</p>
+</div>
 
-<section class="white-box">
-<h2>Export Enquiry</h2>
+<!-- Enquiry -->
+<div class="max-w-5xl mx-auto bg-white p-10 rounded-xl shadow-xl fade">
+<h2 class="text-3xl text-green-800 font-bold mb-5">Export Enquiry</h2>
 <form action="https://formsubmit.co/kccocoproducts@gmail.com" method="POST">
-<input name="name" placeholder="Name" required>
-<input name="email" type="email" placeholder="Email" required>
-<input name="country" placeholder="Country" required>
-<input name="product" placeholder="Product Required" required>
-<input name="quantity" placeholder="Quantity (MT)" required>
-<textarea name="message" placeholder="Requirement"></textarea>
-<button type="submit">Send Enquiry</button>
+<input class="w-full p-3 border mb-4" name="name" placeholder="Name" required>
+<input class="w-full p-3 border mb-4" name="email" type="email" placeholder="Email" required>
+<input class="w-full p-3 border mb-4" name="country" placeholder="Country" required>
+<input class="w-full p-3 border mb-4" name="product" placeholder="Product" required>
+<input class="w-full p-3 border mb-4" name="quantity" placeholder="Quantity (MT)" required>
+<textarea class="w-full p-3 border mb-4" name="message" placeholder="Requirement"></textarea>
+<button class="bg-green-800 text-white px-10 py-3">Send Enquiry</button>
 </form>
-</section>
+</div>
 
-<footer>
-📞 9363940486 | ✉ kccocoproducts@gmail.com <br>
-🌍 https://karthickcoirs.com
-</footer>
+<!-- Footer -->
+<div class="bg-green-800 text-white text-center p-10 mt-20">
+<p>📞 9363940486 | ✉ kccocoproducts@gmail.com</p>
+<p>🌍 https://karthickcoirs.com</p>
+</div>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/919363940486" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;">💬 WhatsApp</a>
+<!-- WhatsApp -->
+<a href="https://wa.me/919363940486" class="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-full shadow-xl">💬 WhatsApp</a>
 
 </body>
 </html>
