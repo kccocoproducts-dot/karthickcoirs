@@ -2,147 +2,144 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Karthick Coirs – Cocopeat Exporter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karthick Coirs</title>
 
-<meta name="description" content="Karthick Coirs is a leading cocopeat manufacturer and exporter in India. We supply Low EC cocopeat, High EC cocopeat, grow bags, poultry coco pith and nursery cocopeat from Palani Tamil Nadu.">
-<meta name="keywords" content="Low EC Cocopeat Exporter India, Cocopeat Manufacturer Tamil Nadu, Cocopeat Supplier Palani, Grow Bags, Poultry Coco Pith, Nursery Cocopeat">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <style>
 body{
-background:
-linear-gradient(rgba(255,255,255,0.35),rgba(255,255,255,0.35)),
-url('coconut-bg.jpeg');
-background-size:cover;
-background-attachment:fixed;
-background-position:center;
-}
-.fade{animation:fadeIn 1.2s ease}
-@keyframes fadeIn{
-from{opacity:0;transform:translateY(30px)}
-to{opacity:1;transform:translateY(0)}
+  background:
+   linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),
+   url('coconut-bg.jpeg') no-repeat center center fixed;
+  background-size:cover;
 }
 </style>
 </head>
 
-<body class="font-serif">
+<body class="text-gray-800">
 
-<!-- Hamburger Menu -->
-<div class="fixed top-5 right-5 z-50">
-<button id="menuBtn" class="text-3xl bg-white px-4 py-2 rounded shadow">☰</button>
-</div>
+<!-- HEADER -->
+<header class="bg-green-800 text-white fixed top-0 w-full z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl">Karthick Coirs</h1>
 
-<div id="menu" class="hidden fixed top-0 right-0 w-64 h-full bg-green-800 text-white p-8 z-40">
-<a href="index.html" class="block py-3">Home</a>
-<a href="low-ec-cocopeat.html" class="block py-3">Low EC Cocopeat</a>
-<a href="high-ec-cocopeat.html" class="block py-3">High EC Cocopeat</a>
-<a href="grow-bags.html" class="block py-3">Grow Bags</a>
-<a href="poultry-coco-pith.html" class="block py-3">Poultry Coco Pith</a>
-<a href="nursery-cocopeat.html" class="block py-3">Nursery Cocopeat</a>
-<a href="#" onclick="closeMenu()" class="block py-6">Close ✖</a>
-</div>
+    <!-- Hamburger -->
+    <div id="menuBtn" class="cursor-pointer space-y-1 md:hidden">
+      <div class="w-6 h-1 bg-white"></div>
+      <div class="w-6 h-1 bg-white"></div>
+      <div class="w-6 h-1 bg-white"></div>
+    </div>
 
-<!-- Header -->
-<div class="text-center py-20 fade">
-<img src="Kclogo.jpeg" class="w-28 mx-auto bg-white p-2 rounded-full shadow-lg">
-<h1 class="text-5xl font-bold text-green-800 mt-5">KARTHICK COIRS</h1>
-<p class="text-xl mt-2">Premium Cocopeat & Coir Products Exporter</p>
-<p class="text-green-700">Palani, Tamil Nadu, India</p>
-<p class="font-bold mt-2">GSTIN: 33CJRPV0480M1ZI</p>
-</div>
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex gap-6">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#ceo">CEO</a>
+      <a href="#enquiry">Enquiry</a>
+    </nav>
+  </div>
 
-<!-- Products -->
-<div class="max-w-7xl mx-auto px-10 fade">
-<h2 class="text-3xl text-green-800 font-bold border-b-4 border-green-800 inline-block">Our Products</h2>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden bg-green-700 p-4 space-y-3 text-center">
+    <a href="#home" class="block">Home</a>
+    <a href="#products" class="block">Products</a>
+    <a href="#ceo" class="block">CEO</a>
+    <a href="#enquiry" class="block">Enquiry</a>
+  </div>
+</header>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+<!-- HERO -->
+<section id="home" class="pt-24 text-center" data-aos="fade-up">
+  <h2 class="text-4xl font-bold text-green-800">Premium Cocopeat & Coir Products</h2>
+  <p class="mt-2">Palani, Tamil Nadu – India</p>
+</section>
 
-<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
-<img src="Lowec.jpeg" class="w-full h-52 object-cover">
-<div class="p-6">
-<h3 class="font-bold text-xl">Low EC Cocopeat</h3>
-<p>Washed & buffered export grade cocopeat.</p>
-<a href="low-ec-cocopeat.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
-</div>
-</div>
+<!-- PRODUCTS -->
+<section id="products" class="max-w-6xl mx-auto mt-10 px-4" data-aos="fade-up">
+  <h2 class="text-2xl font-bold mb-4 text-green-700">Our Products</h2>
 
-<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
-<img src="Highec.jpeg" class="w-full h-52 object-cover">
-<div class="p-6">
-<h3 class="font-bold text-xl">High EC Cocopeat</h3>
-<p>Natural cocopeat for soil conditioning.</p>
-<a href="high-ec-cocopeat.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
-</div>
-</div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Product -->
+    <div class="bg-white p-4 rounded shadow" data-aos="zoom-in">
+      <img src="IMG_1167.jpg" class="rounded mb-3">
+      <h3 class="font-bold">Cocopeat Block</h3>
+      <button onclick="openProduct('Cocopeat Block','High quality compressed cocopeat blocks for export.')" class="bg-green-700 text-white px-3 py-1 mt-2 rounded">View Details</button>
+    </div>
 
-<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
-<img src="Growbag.jpeg" class="w-full h-52 object-cover">
-<div class="p-6">
-<h3 class="font-bold text-xl">Grow Bags</h3>
-<p>Ready to use cocopeat grow bags.</p>
-<a href="grow-bags.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
-</div>
-</div>
+    <div class="bg-white p-4 rounded shadow" data-aos="zoom-in">
+      <img src="IMG_1167.jpg" class="rounded mb-3">
+      <h3 class="font-bold">Coir Fibre</h3>
+      <button onclick="openProduct('Coir Fibre','Strong natural coir fibre for ropes and mats.')" class="bg-green-700 text-white px-3 py-1 mt-2 rounded">View Details</button>
+    </div>
 
-<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
-<img src="Polutary.jpeg" class="w-full h-52 object-cover">
-<div class="p-6">
-<h3 class="font-bold text-xl">Poultry Coco Pith</h3>
-<p>High absorbent poultry bedding.</p>
-<a href="poultry-coco-pith.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
-</div>
-</div>
-
-<div class="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition">
-<img src="Nursery.jpeg" class="w-full h-52 object-cover">
-<div class="p-6">
-<h3 class="font-bold text-xl">Nursery Cocopeat</h3>
-<p>Fine cocopeat for seedlings.</p>
-<a href="nursery-cocopeat.html" class="text-green-700 font-bold mt-3 inline-block">View Details →</a>
-</div>
-</div>
-
-</div>
-</div>
+    <div class="bg-white p-4 rounded shadow" data-aos="zoom-in">
+      <img src="IMG_1167.jpg" class="rounded mb-3">
+      <h3 class="font-bold">Grow Bags</h3>
+      <button onclick="openProduct('Grow Bags','Eco-friendly grow bags for farming.')" class="bg-green-700 text-white px-3 py-1 mt-2 rounded">View Details</button>
+    </div>
+  </div>
+</section>
 
 <!-- CEO -->
-<div class="max-w-5xl mx-auto bg-white p-10 rounded-xl shadow-xl my-20 fade">
-<h2 class="text-3xl text-green-800 font-bold">Meet Our CEO</h2>
-<p class="mt-4"><b>Karthick Venkidusamy</b> – Founder & CEO</p>
-<p>5+ years of experience in cocopeat manufacturing and export, delivering quality to global markets.</p>
-</div>
+<section id="ceo" class="max-w-4xl mx-auto mt-12 px-4 text-center" data-aos="fade-up">
+  <h2 class="text-2xl font-bold text-green-700">Meet Our CEO</h2>
+  <p class="mt-2 font-semibold">Karthick Venkidusamy – Founder & CEO</p>
+  <p class="mt-2">5+ years experience in cocopeat manufacturing & export.</p>
+</section>
 
-<!-- Enquiry -->
-<div class="max-w-5xl mx-auto bg-white p-10 rounded-xl shadow-xl fade">
-<h2 class="text-3xl text-green-800 font-bold mb-5">Export Enquiry</h2>
-<form action="https://formsubmit.co/kccocoproducts@gmail.com" method="POST">
-<input class="w-full p-3 border mb-4" name="name" placeholder="Name" required>
-<input class="w-full p-3 border mb-4" name="email" type="email" placeholder="Email" required>
-<input class="w-full p-3 border mb-4" name="country" placeholder="Country" required>
-<input class="w-full p-3 border mb-4" name="product" placeholder="Product" required>
-<input class="w-full p-3 border mb-4" name="quantity" placeholder="Quantity (MT)" required>
-<textarea class="w-full p-3 border mb-4" name="message" placeholder="Requirement"></textarea>
-<button class="bg-green-800 text-white px-10 py-3">Send Enquiry</button>
-</form>
-</div>
+<!-- ENQUIRY -->
+<section id="enquiry" class="max-w-3xl mx-auto mt-12 px-4" data-aos="fade-up">
+  <h2 class="text-2xl font-bold mb-4 text-green-700">Product Enquiry</h2>
+  <div class="bg-white p-4 rounded shadow space-y-3">
+    <input class="w-full p-2 border rounded" placeholder="Your Name">
+    <input class="w-full p-2 border rounded" placeholder="Your Email">
+    <input class="w-full p-2 border rounded" placeholder="Product Interested">
+    <textarea class="w-full p-2 border rounded" placeholder="Your Requirement"></textarea>
+    <button class="bg-green-700 text-white px-4 py-2 rounded">Send Enquiry</button>
+  </div>
+</section>
 
-<!-- Footer -->
-<div class="bg-green-800 text-white text-center p-10 mt-20">
-<p>📞 9363940486 | ✉ kccocoproducts@gmail.com</p>
-<p>🌍 https://karthickcoirs.com</p>
+<!-- FOOTER -->
+<footer class="bg-green-800 text-white text-center mt-12 p-4">
+  📞 9363940486 | ✉️ kccocoproducts@gmail.com <br>
+  GSTIN: 33CJRPV0480M1ZI <br>
+  © 2026 Karthick Coirs
+</footer>
+
+<!-- PRODUCT MODAL -->
+<div id="productModal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center">
+  <div class="bg-white p-6 rounded max-w-sm text-center">
+    <h3 id="pTitle" class="font-bold text-lg"></h3>
+    <p id="pDesc" class="mt-2"></p>
+    <button onclick="closeProduct()" class="mt-4 bg-green-700 text-white px-4 py-1 rounded">Close</button>
+  </div>
 </div>
 
 <!-- WhatsApp -->
-<a href="https://wa.me/919363940486" class="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-full shadow-xl">💬 WhatsApp</a>
+<a href="https://wa.me/919363940486" target="_blank"
+ class="fixed bottom-5 right-5 bg-green-500 p-3 rounded-full shadow-lg text-white">💬</a>
 
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-document.getElementById("menuBtn").onclick=function(){
-document.getElementById("menu").classList.remove("hidden");
+AOS.init({duration:1000, once:true});
+
+document.getElementById("menuBtn").onclick = ()=>{
+  document.getElementById("mobileMenu").classList.toggle("hidden");
+};
+
+function openProduct(title,desc){
+  document.getElementById("pTitle").innerText = title;
+  document.getElementById("pDesc").innerText = desc;
+  document.getElementById("productModal").classList.remove("hidden");
 }
-function closeMenu(){
-document.getElementById("menu").classList.add("hidden");
+function closeProduct(){
+  document.getElementById("productModal").classList.add("hidden");
 }
 </script>
 
