@@ -29,7 +29,7 @@ border-radius:50%;
 padding:10px;
 }
 
-/* MENU */
+/* MENU BUTTON */
 .menu-btn{
 position:absolute;
 right:20px;
@@ -41,38 +41,6 @@ padding:10px 14px;
 border-radius:6px;
 cursor:pointer;
 }
-
-#menu{
-position:fixed;
-top:0;
-right:-100%;
-width:75%;
-height:100%;
-background:#1b5e20;
-color:white;
-transition:0.4s;
-padding:40px 20px;
-z-index:999;
-}
-
-#menu a, #menu button{
-display:block;
-color:white;
-text-decoration:none;
-font-size:18px;
-margin:15px 0;
-background:none;
-border:none;
-text-align:left;
-cursor:pointer;
-}
-
-.submenu{
-margin-left:15px;
-display:none;
-}
-
-.open{right:0;}
 
 /* SECTIONS */
 section{
@@ -133,7 +101,7 @@ padding:25px;
 <body>
 
 <header>
-<button class="menu-btn" id="menuBtn">☰</button>
+<button class="menu-btn" onclick="openMenu()">☰</button>
 
 <img src="Kclogo.jpeg">
 <h1>🌴 KARTHICK COIRS</h1>
@@ -142,22 +110,23 @@ padding:25px;
 </header>
 
 <!-- MENU -->
-<div id="menu">
-<button onclick="document.getElementById('menu').classList.remove('open')">❌ Close</button>
+<div id="menu" style="display:none; position:fixed; top:0; right:0; width:75%; height:100%; background:#1b5e20; color:white; padding:40px 20px; z-index:999;">
+<button onclick="closeMenu()" style="background:white;color:black;padding:8px 12px;border:none;border-radius:5px;">❌ Close</button>
 
-<a href="#home">🏠 Home</a>
+<p style="margin-top:20px;"><a href="#home" style="color:white;">🏠 Home</a></p>
 
-<button onclick="toggleSub()">📦 Products ▼</button>
-<div id="submenu" class="submenu">
-<a href="low-ec-cocopeat.html">🌿 Low EC Cocopeat</a>
-<a href="high-ec-cocopeat.html">🌱 High EC Cocopeat</a>
-<a href="grow-bags.html">🧱 Grow Bags</a>
-<a href="poultry-coco-pith.html">🐔 Poultry Coco Pith</a>
-<a href="nursery-cocopeat.html">🏡 Nursery Cocopeat</a>
-<a href="raw-coconut.html">🥥 Raw Coconut</a>
+<button onclick="toggleSub()" style="background:none;border:none;color:white;font-size:18px;margin-top:15px;">📦 Products ▼</button>
+
+<div id="submenu" style="display:none;margin-left:15px;">
+<p><a href="low-ec-cocopeat.html" style="color:white;">Low EC Cocopeat</a></p>
+<p><a href="high-ec-cocopeat.html" style="color:white;">High EC Cocopeat</a></p>
+<p><a href="grow-bags.html" style="color:white;">Grow Bags</a></p>
+<p><a href="poultry-coco-pith.html" style="color:white;">Poultry Coco Pith</a></p>
+<p><a href="nursery-cocopeat.html" style="color:white;">Nursery Cocopeat</a></p>
+<p><a href="raw-coconut.html" style="color:white;">Raw Coconut</a></p>
 </div>
 
-<a href="#enquiry">📩 Enquiry</a>
+<p style="margin-top:15px;"><a href="#enquiry" style="color:white;">📩 Enquiry</a></p>
 </div>
 
 <section id="home">
@@ -229,13 +198,15 @@ padding:25px;
 </footer>
 
 <script>
-document.getElementById("menuBtn").addEventListener("click", function(){
-  document.getElementById("menu").classList.toggle("open");
-});
-
+function openMenu(){
+  document.getElementById("menu").style.display="block";
+}
+function closeMenu(){
+  document.getElementById("menu").style.display="none";
+}
 function toggleSub(){
-  var sub = document.getElementById("submenu");
-  sub.style.display = (sub.style.display === "block") ? "none" : "block";
+  var s=document.getElementById("submenu");
+  s.style.display=(s.style.display==="block")?"none":"block";
 }
 </script>
 
