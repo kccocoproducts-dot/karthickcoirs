@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>🌴 Karthick Coirs – Cocopeat Manufacturer</title>
+<title>Karthick Coirs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body{
 margin:0;
-font-family:Georgia,serif;
-background:#f7fff7;
+font-family:Poppins, sans-serif;
+background:#f4fff4;
 color:#222;
 }
 
@@ -17,7 +19,7 @@ color:#222;
 header{
 background:#1b5e20;
 color:white;
-padding:40px 20px;
+padding:45px 20px;
 text-align:center;
 position:relative;
 }
@@ -26,7 +28,7 @@ header img{
 width:90px;
 background:white;
 border-radius:50%;
-padding:10px;
+padding:8px;
 }
 
 /* MENU BUTTON */
@@ -36,13 +38,51 @@ right:20px;
 top:20px;
 background:white;
 border:none;
-font-size:22px;
+font-size:24px;
 padding:10px 14px;
 border-radius:6px;
 cursor:pointer;
 }
 
-/* SECTIONS */
+/* SIDE MENU */
+#menu{
+position:fixed;
+top:0;
+right:-100%;
+width:78%;
+height:100%;
+background:#1b5e20;
+color:white;
+transition:0.4s ease;
+padding:30px 20px;
+z-index:999;
+}
+
+#menu a{
+display:block;
+color:white;
+text-decoration:none;
+font-size:18px;
+margin:14px 0;
+}
+
+#menu span{
+cursor:pointer;
+display:block;
+margin:14px 0;
+font-size:18px;
+}
+
+.submenu{
+margin-left:20px;
+display:none;
+font-size:16px;
+}
+
+.open{ right:0; }
+.show{ display:block; }
+
+/* PRODUCTS */
 section{
 max-width:1100px;
 margin:auto;
@@ -52,22 +92,25 @@ padding:40px 20px;
 h2{
 color:#1b5e20;
 border-bottom:3px solid #1b5e20;
-padding-bottom:5px;
+padding-bottom:6px;
+margin-bottom:20px;
 }
 
-/* PRODUCTS */
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .card{
 background:white;
-border-radius:12px;
+border-radius:14px;
 overflow:hidden;
-box-shadow:0 4px 12px rgba(0,0,0,.1);
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+transition:.3s;
 }
+
+.card:hover{transform:translateY(-5px);}
 
 .card img{
 width:100%;
@@ -75,9 +118,7 @@ height:200px;
 object-fit:cover;
 }
 
-.card div{
-padding:15px;
-}
+.card div{ padding:15px; }
 
 .card a{
 display:block;
@@ -101,112 +142,82 @@ padding:25px;
 <body>
 
 <header>
-<button class="menu-btn" onclick="openMenu()">☰</button>
-
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 <img src="Kclogo.jpeg">
-<h1>🌴 KARTHICK COIRS</h1>
-<p>Premium Cocopeat & Coconut Products</p>
-<p>📍 Palani, Tamil Nadu – India</p>
+<h1>KARTHICK COIRS</h1>
+<p>Natural Coconut & Coir Products</p>
+<p>Palani, Tamil Nadu – India</p>
 </header>
 
 <!-- MENU -->
-<div id="menu" style="display:none; position:fixed; top:0; right:0; width:75%; height:100%; background:#1b5e20; color:white; padding:40px 20px; z-index:999;">
-<button onclick="closeMenu()" style="background:white;color:black;padding:8px 12px;border:none;border-radius:5px;">❌ Close</button>
+<div id="menu">
+<a href="#" onclick="closeMenu()">❌ Close</a>
 
-<p style="margin-top:20px;"><a href="#home" style="color:white;">🏠 Home</a></p>
+<a href="#home" onclick="closeMenu()">🏠 Home</a>
 
-<button onclick="toggleSub()" style="background:none;border:none;color:white;font-size:18px;margin-top:15px;">📦 Products ▼</button>
-
-<div id="submenu" style="display:none;margin-left:15px;">
-<p><a href="low-ec-cocopeat.html" style="color:white;">Low EC Cocopeat</a></p>
-<p><a href="high-ec-cocopeat.html" style="color:white;">High EC Cocopeat</a></p>
-<p><a href="grow-bags.html" style="color:white;">Grow Bags</a></p>
-<p><a href="poultry-coco-pith.html" style="color:white;">Poultry Coco Pith</a></p>
-<p><a href="nursery-cocopeat.html" style="color:white;">Nursery Cocopeat</a></p>
-<p><a href="raw-coconut.html" style="color:white;">Raw Coconut</a></p>
+<span onclick="toggleSub()">📦 Products ▼</span>
+<div id="submenu" class="submenu">
+<a href="raw-coconut.html" onclick="closeMenu()">Raw Coconut</a>
+<a href="coconut-husk.html" onclick="closeMenu()">Coconut Husk</a>
+<a href="coconut-shell.html" onclick="closeMenu()">Coconut Shell</a>
 </div>
 
-<p style="margin-top:15px;"><a href="#enquiry" style="color:white;">📩 Enquiry</a></p>
+<a href="#enquiry" onclick="closeMenu()">✉ Enquiry</a>
 </div>
 
 <section id="home">
-<h2>🌟 Our Products</h2>
+<h2>Our Products</h2>
 
 <div class="products">
-
-<div class="card">
-<img src="Lowec.jpeg">
-<div>
-<h3>Low EC Cocopeat</h3>
-<p>Washed & buffered for export.</p>
-</div>
-<a href="low-ec-cocopeat.html">View Details</a>
-</div>
-
-<div class="card">
-<img src="Highec.jpeg">
-<div>
-<h3>High EC Cocopeat</h3>
-<p>Natural farming cocopeat.</p>
-</div>
-<a href="high-ec-cocopeat.html">View Details</a>
-</div>
-
-<div class="card">
-<img src="Growbag.jpeg">
-<div>
-<h3>Grow Bags</h3>
-<p>For vegetable cultivation.</p>
-</div>
-<a href="grow-bags.html">View Details</a>
-</div>
-
-<div class="card">
-<img src="Polutary.jpeg">
-<div>
-<h3>Poultry Coco Pith</h3>
-<p>Absorbent bedding.</p>
-</div>
-<a href="poultry-coco-pith.html">View Details</a>
-</div>
-
-<div class="card">
-<img src="Nursery.jpeg">
-<div>
-<h3>Nursery Cocopeat</h3>
-<p>Seedling grade.</p>
-</div>
-<a href="nursery-cocopeat.html">View Details</a>
-</div>
 
 <div class="card">
 <img src="IMG_1167.jpg">
 <div>
 <h3>Raw Coconut</h3>
-<p>Farm fresh supply.</p>
+<p>Fresh farm supply.</p>
 </div>
 <a href="raw-coconut.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="Coconut-husk.jpeg">
+<div>
+<h3>Coconut Husk</h3>
+<p>Natural fibre husk.</p>
+</div>
+<a href="coconut-husk.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="Coconut-shell.jpeg">
+<div>
+<h3>Coconut Shell</h3>
+<p>Hard natural shells.</p>
+</div>
+<a href="coconut-shell.html">View Details</a>
 </div>
 
 </div>
 </section>
 
 <footer id="enquiry">
-📞 9363940486 | ✉️ kccocoproducts@gmail.com  
-<br>🧾 GSTIN: 33CJRPV0480M1ZI  
+📞 9363940486 | ✉ kccocoproducts@gmail.com  
+<br>GSTIN: 33CJRPV0480M1ZI  
 <br>© 2026 Karthick Coirs
 </footer>
 
 <script>
-function openMenu(){
-  document.getElementById("menu").style.display="block";
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("open");
 }
+
 function closeMenu(){
-  document.getElementById("menu").style.display="none";
+document.getElementById("menu").classList.remove("open");
+document.getElementById("submenu").classList.remove("show");
 }
+
 function toggleSub(){
-  var s=document.getElementById("submenu");
-  s.style.display=(s.style.display==="block")?"none":"block";
+document.getElementById("submenu").classList.toggle("show");
 }
 </script>
 
