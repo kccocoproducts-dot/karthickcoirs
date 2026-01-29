@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Karthick Coirs</title>
+<title>Karthick Coirs – Cocopeat Manufacturer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 <style>
+*{box-sizing:border-box}
 body{
 margin:0;
-font-family:'Poppins',sans-serif;
-background:#f4fff4;
+font-family:Georgia,serif;
+background:#f7fff7;
 color:#222;
 }
 
@@ -23,7 +22,6 @@ padding:40px 20px;
 text-align:center;
 position:relative;
 }
-
 header img{
 width:90px;
 background:white;
@@ -31,19 +29,19 @@ border-radius:50%;
 padding:10px;
 }
 
+/* MENU */
 .menu-btn{
 position:absolute;
 right:20px;
 top:20px;
 background:white;
 border:none;
-font-size:22px;
+font-size:24px;
 padding:10px 14px;
 border-radius:6px;
 cursor:pointer;
 }
 
-/* MENU */
 #menu{
 position:fixed;
 top:0;
@@ -56,7 +54,6 @@ transition:0.4s;
 padding:30px 20px;
 z-index:999;
 }
-
 #menu a{
 display:block;
 color:white;
@@ -64,12 +61,12 @@ text-decoration:none;
 font-size:18px;
 margin:15px 0;
 }
+#menu a:hover{opacity:.8}
 
 .submenu{
 margin-left:15px;
 display:none;
 }
-
 .show{display:block;}
 .open{right:0;}
 
@@ -79,7 +76,6 @@ max-width:1100px;
 margin:auto;
 padding:40px 20px;
 }
-
 h2{
 color:#1b5e20;
 border-bottom:3px solid #1b5e20;
@@ -89,30 +85,21 @@ padding-bottom:5px;
 /* PRODUCTS */
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 }
-
 .card{
 background:white;
 border-radius:12px;
 overflow:hidden;
 box-shadow:0 4px 12px rgba(0,0,0,.1);
-transition:0.3s;
 }
-
-.card:hover{transform:translateY(-6px);}
-
 .card img{
 width:100%;
 height:200px;
 object-fit:cover;
 }
-
-.card div{
-padding:15px;
-}
-
+.card div{padding:15px;}
 .card a{
 display:block;
 background:#1b5e20;
@@ -138,15 +125,16 @@ padding:25px;
 <button class="menu-btn" onclick="toggleMenu()">☰</button>
 <img src="Kclogo.jpeg">
 <h1>KARTHICK COIRS</h1>
-<p>Premium Cocopeat & Coconut Products</p>
+<p>Premium Cocopeat & Coir Products</p>
+<p>Palani, Tamil Nadu – India</p>
 </header>
 
 <!-- MENU -->
 <div id="menu">
 <a href="#" onclick="closeMenu()">✖ Close</a>
 <a href="#home" onclick="closeMenu()">Home</a>
-<a href="#" onclick="toggleSub()">Products ▼</a>
 
+<a href="#" onclick="toggleSub()">Products ▼</a>
 <div id="submenu" class="submenu">
 <a href="low-ec-cocopeat.html" onclick="closeMenu()">Low EC Cocopeat</a>
 <a href="high-ec-cocopeat.html" onclick="closeMenu()">High EC Cocopeat</a>
@@ -166,14 +154,41 @@ padding:25px;
 
 <div class="products">
 
-<div class="card"><img src="Lowec.jpeg"><div><h3>Low EC Cocopeat</h3></div><a href="low-ec-cocopeat.html">View</a></div>
-<div class="card"><img src="Highec.jpeg"><div><h3>High EC Cocopeat</h3></div><a href="high-ec-cocopeat.html">View</a></div>
-<div class="card"><img src="Growbag.jpeg"><div><h3>Grow Bags</h3></div><a href="grow-bags.html">View</a></div>
-<div class="card"><img src="Polutary.jpeg"><div><h3>Poultry Coco Pith</h3></div><a href="poultry-coco-pith.html">View</a></div>
-<div class="card"><img src="Nursery.jpeg"><div><h3>Nursery Cocopeat</h3></div><a href="nursery-cocopeat.html">View</a></div>
-<div class="card"><img src="IMG_1167.jpg"><div><h3>Raw Coconut</h3></div><a href="raw-coconut.html">View</a></div>
-<div class="card"><img src="Coconut-husk.jpeg"><div><h3>Coconut Husk</h3></div><a href="coconut-husk.html">View</a></div>
-<div class="card"><img src="Coconut-shell.jpeg"><div><h3>Coconut Shell</h3></div><a href="coconut-shell.html">View</a></div>
+<div class="card">
+<img src="Lowec.jpeg">
+<div><h3>Low EC Cocopeat</h3><p>Washed & buffered for export.</p></div>
+<a href="low-ec-cocopeat.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="Highec.jpeg">
+<div><h3>High EC Cocopeat</h3><p>Natural farming cocopeat.</p></div>
+<a href="high-ec-cocopeat.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="Growbag.jpeg">
+<div><h3>Grow Bags</h3><p>For vegetable cultivation.</p></div>
+<a href="grow-bags.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="Polutary.jpeg">
+<div><h3>Poultry Coco Pith</h3><p>Absorbent bedding.</p></div>
+<a href="poultry-coco-pith.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="Nursery.jpeg">
+<div><h3>Nursery Cocopeat</h3><p>Seedling grade.</p></div>
+<a href="nursery-cocopeat.html">View Details</a>
+</div>
+
+<div class="card">
+<img src="IMG_1167.jpg">
+<div><h3>Raw Coconut</h3><p>Farm fresh supply.</p></div>
+<a href="raw-coconut.html">View Details</a>
+</div>
 
 </div>
 </section>
