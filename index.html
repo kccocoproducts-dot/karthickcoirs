@@ -5,12 +5,12 @@
 <title>Karthick Coirs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body{
 margin:0;
-font-family:Poppins, sans-serif;
+font-family:'Poppins',sans-serif;
 background:#f4fff4;
 color:#222;
 }
@@ -19,7 +19,7 @@ color:#222;
 header{
 background:#1b5e20;
 color:white;
-padding:45px 20px;
+padding:40px 20px;
 text-align:center;
 position:relative;
 }
@@ -28,32 +28,31 @@ header img{
 width:90px;
 background:white;
 border-radius:50%;
-padding:8px;
+padding:10px;
 }
 
-/* MENU BUTTON */
 .menu-btn{
 position:absolute;
 right:20px;
 top:20px;
 background:white;
 border:none;
-font-size:24px;
+font-size:22px;
 padding:10px 14px;
 border-radius:6px;
 cursor:pointer;
 }
 
-/* SIDE MENU */
+/* MENU */
 #menu{
 position:fixed;
 top:0;
 right:-100%;
-width:78%;
+width:75%;
 height:100%;
 background:#1b5e20;
 color:white;
-transition:0.4s ease;
+transition:0.4s;
 padding:30px 20px;
 z-index:999;
 }
@@ -63,26 +62,18 @@ display:block;
 color:white;
 text-decoration:none;
 font-size:18px;
-margin:14px 0;
-}
-
-#menu span{
-cursor:pointer;
-display:block;
-margin:14px 0;
-font-size:18px;
+margin:15px 0;
 }
 
 .submenu{
-margin-left:20px;
+margin-left:15px;
 display:none;
-font-size:16px;
 }
 
-.open{ right:0; }
-.show{ display:block; }
+.show{display:block;}
+.open{right:0;}
 
-/* PRODUCTS */
+/* SECTIONS */
 section{
 max-width:1100px;
 margin:auto;
@@ -92,10 +83,10 @@ padding:40px 20px;
 h2{
 color:#1b5e20;
 border-bottom:3px solid #1b5e20;
-padding-bottom:6px;
-margin-bottom:20px;
+padding-bottom:5px;
 }
 
+/* PRODUCTS */
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -104,13 +95,13 @@ gap:25px;
 
 .card{
 background:white;
-border-radius:14px;
+border-radius:12px;
 overflow:hidden;
-box-shadow:0 4px 12px rgba(0,0,0,.15);
-transition:.3s;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+transition:0.3s;
 }
 
-.card:hover{transform:translateY(-5px);}
+.card:hover{transform:translateY(-6px);}
 
 .card img{
 width:100%;
@@ -118,7 +109,9 @@ height:200px;
 object-fit:cover;
 }
 
-.card div{ padding:15px; }
+.card div{
+padding:15px;
+}
 
 .card a{
 display:block;
@@ -145,24 +138,27 @@ padding:25px;
 <button class="menu-btn" onclick="toggleMenu()">☰</button>
 <img src="Kclogo.jpeg">
 <h1>KARTHICK COIRS</h1>
-<p>Natural Coconut & Coir Products</p>
-<p>Palani, Tamil Nadu – India</p>
+<p>Premium Cocopeat & Coconut Products</p>
 </header>
 
 <!-- MENU -->
 <div id="menu">
-<a href="#" onclick="closeMenu()">❌ Close</a>
+<a href="#" onclick="closeMenu()">✖ Close</a>
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#" onclick="toggleSub()">Products ▼</a>
 
-<a href="#home" onclick="closeMenu()">🏠 Home</a>
-
-<span onclick="toggleSub()">📦 Products ▼</span>
 <div id="submenu" class="submenu">
+<a href="low-ec-cocopeat.html" onclick="closeMenu()">Low EC Cocopeat</a>
+<a href="high-ec-cocopeat.html" onclick="closeMenu()">High EC Cocopeat</a>
+<a href="grow-bags.html" onclick="closeMenu()">Grow Bags</a>
+<a href="poultry-coco-pith.html" onclick="closeMenu()">Poultry Coco Pith</a>
+<a href="nursery-cocopeat.html" onclick="closeMenu()">Nursery Cocopeat</a>
 <a href="raw-coconut.html" onclick="closeMenu()">Raw Coconut</a>
 <a href="coconut-husk.html" onclick="closeMenu()">Coconut Husk</a>
 <a href="coconut-shell.html" onclick="closeMenu()">Coconut Shell</a>
 </div>
 
-<a href="#enquiry" onclick="closeMenu()">✉ Enquiry</a>
+<a href="#enquiry" onclick="closeMenu()">Enquiry</a>
 </div>
 
 <section id="home">
@@ -170,32 +166,14 @@ padding:25px;
 
 <div class="products">
 
-<div class="card">
-<img src="IMG_1167.jpg">
-<div>
-<h3>Raw Coconut</h3>
-<p>Fresh farm supply.</p>
-</div>
-<a href="raw-coconut.html">View Details</a>
-</div>
-
-<div class="card">
-<img src="Coconut-husk.jpeg">
-<div>
-<h3>Coconut Husk</h3>
-<p>Natural fibre husk.</p>
-</div>
-<a href="coconut-husk.html">View Details</a>
-</div>
-
-<div class="card">
-<img src="Coconut-shell.jpeg">
-<div>
-<h3>Coconut Shell</h3>
-<p>Hard natural shells.</p>
-</div>
-<a href="coconut-shell.html">View Details</a>
-</div>
+<div class="card"><img src="Lowec.jpeg"><div><h3>Low EC Cocopeat</h3></div><a href="low-ec-cocopeat.html">View</a></div>
+<div class="card"><img src="Highec.jpeg"><div><h3>High EC Cocopeat</h3></div><a href="high-ec-cocopeat.html">View</a></div>
+<div class="card"><img src="Growbag.jpeg"><div><h3>Grow Bags</h3></div><a href="grow-bags.html">View</a></div>
+<div class="card"><img src="Polutary.jpeg"><div><h3>Poultry Coco Pith</h3></div><a href="poultry-coco-pith.html">View</a></div>
+<div class="card"><img src="Nursery.jpeg"><div><h3>Nursery Cocopeat</h3></div><a href="nursery-cocopeat.html">View</a></div>
+<div class="card"><img src="IMG_1167.jpg"><div><h3>Raw Coconut</h3></div><a href="raw-coconut.html">View</a></div>
+<div class="card"><img src="Coconut-husk.jpeg"><div><h3>Coconut Husk</h3></div><a href="coconut-husk.html">View</a></div>
+<div class="card"><img src="Coconut-shell.jpeg"><div><h3>Coconut Shell</h3></div><a href="coconut-shell.html">View</a></div>
 
 </div>
 </section>
@@ -210,12 +188,9 @@ padding:25px;
 function toggleMenu(){
 document.getElementById("menu").classList.toggle("open");
 }
-
 function closeMenu(){
 document.getElementById("menu").classList.remove("open");
-document.getElementById("submenu").classList.remove("show");
 }
-
 function toggleSub(){
 document.getElementById("submenu").classList.toggle("show");
 }
