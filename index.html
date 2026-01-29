@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Karthick Coirs – Cocopeat Manufacturer</title>
+<title>🌴 Karthick Coirs – Cocopeat Manufacturer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -72,7 +72,6 @@ margin-left:15px;
 display:none;
 }
 
-/* open menu */
 .open{right:0;}
 
 /* SECTIONS */
@@ -134,35 +133,35 @@ padding:25px;
 <body>
 
 <header>
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
+<button class="menu-btn" id="menuBtn">☰</button>
 
 <img src="Kclogo.jpeg">
-<h1>KARTHICK COIRS</h1>
-<p>Premium Cocopeat & Coir Products</p>
-<p>Palani, Tamil Nadu – India</p>
+<h1>🌴 KARTHICK COIRS</h1>
+<p>Premium Cocopeat & Coconut Products</p>
+<p>📍 Palani, Tamil Nadu – India</p>
 </header>
 
 <!-- MENU -->
 <div id="menu">
-<button onclick="toggleMenu()">✖ Close</button>
+<button onclick="document.getElementById('menu').classList.remove('open')">❌ Close</button>
 
-<a href="#home">Home</a>
+<a href="#home">🏠 Home</a>
 
-<button onclick="toggleSub()">Products ▼</button>
+<button onclick="toggleSub()">📦 Products ▼</button>
 <div id="submenu" class="submenu">
-<a href="low-ec-cocopeat.html">Low EC Cocopeat</a>
-<a href="high-ec-cocopeat.html">High EC Cocopeat</a>
-<a href="grow-bags.html">Grow Bags</a>
-<a href="poultry-coco-pith.html">Poultry Coco Pith</a>
-<a href="nursery-cocopeat.html">Nursery Cocopeat</a>
-<a href="raw-coconut.html">Raw Coconut</a>
+<a href="low-ec-cocopeat.html">🌿 Low EC Cocopeat</a>
+<a href="high-ec-cocopeat.html">🌱 High EC Cocopeat</a>
+<a href="grow-bags.html">🧱 Grow Bags</a>
+<a href="poultry-coco-pith.html">🐔 Poultry Coco Pith</a>
+<a href="nursery-cocopeat.html">🏡 Nursery Cocopeat</a>
+<a href="raw-coconut.html">🥥 Raw Coconut</a>
 </div>
 
-<a href="#enquiry">Enquiry</a>
+<a href="#enquiry">📩 Enquiry</a>
 </div>
 
 <section id="home">
-<h2>Our Products</h2>
+<h2>🌟 Our Products</h2>
 
 <div class="products">
 
@@ -212,7 +211,7 @@ padding:25px;
 </div>
 
 <div class="card">
-<img src="IMG_1167.jpeg">
+<img src="IMG_1167.jpg">
 <div>
 <h3>Raw Coconut</h3>
 <p>Farm fresh supply.</p>
@@ -224,23 +223,19 @@ padding:25px;
 </section>
 
 <footer id="enquiry">
-📞 9363940486 | ✉ kccocoproducts@gmail.com  
-<br>GSTIN: 33CJRPV0480M1ZI  
+📞 9363940486 | ✉️ kccocoproducts@gmail.com  
+<br>🧾 GSTIN: 33CJRPV0480M1ZI  
 <br>© 2026 Karthick Coirs
 </footer>
 
 <script>
-function toggleMenu(){
-document.getElementById("menu").classList.toggle("open");
-}
+document.getElementById("menuBtn").addEventListener("click", function(){
+  document.getElementById("menu").classList.toggle("open");
+});
 
 function toggleSub(){
-var sub = document.getElementById("submenu");
-if(sub.style.display === "block"){
-sub.style.display = "none";
-}else{
-sub.style.display = "block";
-}
+  var sub = document.getElementById("submenu");
+  sub.style.display = (sub.style.display === "block") ? "none" : "block";
 }
 </script>
 
